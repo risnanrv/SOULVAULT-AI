@@ -21,18 +21,18 @@ export default function Home() {
             <section className="relative min-h-[100dvh] flex items-center pt-24 pb-12 overflow-hidden">
                 {/* Animated Background Gradients */}
                 <div className="absolute inset-0 bg-gradient-to-br from-white via-[#F4F7FB] to-[#F1F0FA] -z-20" />
-                
+
                 {/* Subtle Moving Glows */}
-                <motion.div 
-                    animate={{ 
+                <motion.div
+                    animate={{
                         scale: [1, 1.1, 1],
                         opacity: [0.3, 0.5, 0.3],
                     }}
                     transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
                     className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] rounded-full bg-indigo-300/20 blur-[100px] -z-10"
                 />
-                <motion.div 
-                    animate={{ 
+                <motion.div
+                    animate={{
                         scale: [1, 1.2, 1],
                         opacity: [0.2, 0.4, 0.2],
                     }}
@@ -42,9 +42,9 @@ export default function Home() {
 
                 <div className="max-w-[1400px] mx-auto px-6 lg:px-8 w-full z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center">
-                        
+
                         {/* LEFT: Section 1 Content */}
-                        <motion.div 
+                        <motion.div
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1.2, ease: [0.23, 1, 0.32, 1] }}
@@ -56,18 +56,18 @@ export default function Home() {
                                     AI-Powered Digital Legacy
                                 </span>
                             </div>
-                            
+
                             <h1 className="text-[3rem] sm:text-[4rem] lg:text-[4.5rem] font-serif text-slate-900 tracking-tight leading-[1.05] mb-8">
-                                What happens to <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600 italic">your digital life</span> <br className="hidden sm:block"/>when <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-orange-400 italic">you're gone?</span>
+                                What happens to <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600 italic">your digital life</span> <br className="hidden sm:block" />when <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-orange-400 italic">you're gone?</span>
                             </h1>
-                            
+
                             <p className="text-[1.2rem] sm:text-[1.35rem] leading-relaxed text-slate-500 font-sans max-w-xl mb-12">
                                 You leave behind memories, accounts, stories. We make sure they reach the people who matter.
                             </p>
-                            
+
                             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5">
-                                <Link 
-                                    href="/signup" 
+                                <Link
+                                    href="/login"
                                     className="group relative inline-flex items-center justify-center gap-3 rounded-full bg-slate-900 px-8 py-4 text-[13px] font-bold text-white transition-all overflow-hidden w-full sm:w-auto hover:bg-slate-800"
                                 >
                                     {/* Button hover glow effect */}
@@ -76,9 +76,9 @@ export default function Home() {
                                         Start Your Vault <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                     </span>
                                 </Link>
-                                
-                                <Link 
-                                    href="#how-it-works" 
+
+                                <Link
+                                    href="#how-it-works"
                                     className="group rounded-full bg-white/50 border border-slate-200 px-8 py-4 text-[13px] font-bold text-slate-600 hover:text-slate-900 hover:bg-white hover:border-slate-300 transition-all hover:shadow-sm w-full sm:w-auto text-center uppercase tracking-widest"
                                 >
                                     See How It Works
@@ -87,7 +87,7 @@ export default function Home() {
                         </motion.div>
 
                         {/* RIGHT: Section 2 Visual (Mock Conversation) */}
-                        <motion.div 
+                        <motion.div
                             initial={{ opacity: 0, x: 40, scale: 0.95 }}
                             animate={{ opacity: 1, x: 0, scale: 1 }}
                             transition={{ duration: 1.5, ease: [0.23, 1, 0.32, 1], delay: 0.2 }}
@@ -95,7 +95,7 @@ export default function Home() {
                         >
                             {/* Glass container */}
                             <div className="bg-white/40 backdrop-blur-2xl border border-white/60 rounded-[2.5rem] p-6 sm:p-10 shadow-[0_20px_80px_rgba(0,0,0,0.05)] relative z-10">
-                                
+
                                 <div className="flex items-center justify-between border-b border-slate-200/50 pb-5 mb-8">
                                     <div className="flex items-center gap-3">
                                         <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-100 to-rose-100 flex items-center justify-center border border-white shadow-sm">
@@ -113,7 +113,7 @@ export default function Home() {
 
                                 <div className="space-y-6">
                                     {/* User Message */}
-                                    <motion.div 
+                                    <motion.div
                                         initial={{ opacity: 0, y: 10 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ duration: 0.8, delay: 1 }}
@@ -127,7 +127,7 @@ export default function Home() {
                                     </motion.div>
 
                                     {/* AI Message */}
-                                    <motion.div 
+                                    <motion.div
                                         initial={{ opacity: 0, y: 10 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         transition={{ duration: 0.8, delay: 2.5 }}
@@ -156,18 +156,18 @@ export default function Home() {
                 <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                         <div className="max-w-xl">
-                            <motion.h2 
+                            <motion.h2
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 1 }}
                                 className="text-[2.5rem] sm:text-[3.5rem] font-serif text-slate-900 tracking-tight leading-[1.1] mb-8"
                             >
-                                We live online.<br/>But we leave everything behind.
+                                We live online.<br />But we leave everything behind.
                             </motion.h2>
                         </div>
 
-                        <motion.div 
+                        <motion.div
                             initial={{ opacity: 0, x: 20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
@@ -201,7 +201,7 @@ export default function Home() {
                                     </p>
                                 </div>
                             </div>
-                            
+
                             <div className="absolute -inset-4 bg-rose-500/5 blur-3xl -z-10 rounded-[4rem]" />
                         </motion.div>
                     </div>
@@ -212,7 +212,7 @@ export default function Home() {
             <section className="py-32 bg-[#FAF9F7]">
                 <div className="max-w-[1400px] mx-auto px-6 lg:px-8">
                     <div className="text-center mb-24">
-                        <motion.h2 
+                        <motion.h2
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-100px" }}
@@ -229,7 +229,7 @@ export default function Home() {
                             { step: "02", title: "Assign Trusted People", desc: "Select beneficiaries and designate exact legacy access levels. They unlock your vault securely when the time comes." },
                             { step: "03", title: "Train Your AI Legacy", desc: "Interact with our intelligence to let it map your tone, memories, and wisdom so you can comfort them when you are gone." }
                         ].map((s, i) => (
-                            <motion.div 
+                            <motion.div
                                 key={i}
                                 initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
@@ -252,27 +252,27 @@ export default function Home() {
             {/* SECTION 5: AI SHOWCASE (DARK CONTRAST) */}
             <section className="py-40 bg-[#0B0C10] relative overflow-hidden text-white border-t border-slate-800">
                 <div className="absolute inset-0 bg-gradient-to-b from-indigo-900/10 to-transparent pointer-events-none" />
-                
+
                 <div className="max-w-[1400px] mx-auto px-6 lg:px-8 relative z-10 text-center">
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 1.5, ease: "easeOut" }}
                     >
                         <Heart className="w-8 h-8 text-rose-400 mx-auto mb-10 fill-rose-500/20" />
-                        
+
                         <h2 className="text-[3.5rem] sm:text-[4.5rem] font-serif tracking-tight mb-8">
                             They don't have to face the silence.
                         </h2>
-                        
+
                         <p className="text-xl sm:text-2xl text-slate-400 font-serif italic max-w-3xl mx-auto mb-20 leading-relaxed">
                             "Your loved ones can talk to your memories, hear your advice, and feel your presence exactly when they need it."
                         </p>
                     </motion.div>
 
                     {/* Massive Beautiful Chat Demo Centerpiece */}
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 40 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
@@ -289,7 +289,7 @@ export default function Home() {
                                     </p>
                                 </div>
                             </div>
-                            
+
                             <div className="flex gap-5 items-end">
                                 <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-rose-400 to-orange-300 flex items-center justify-center shrink-0 shadow-[0_0_30px_rgba(251,113,133,0.3)] border border-rose-300">
                                     <Sparkles className="w-5 h-5 text-white" />
@@ -323,7 +323,7 @@ export default function Home() {
                                 <f.icon className={`w-8 h-8 mb-8 ${f.dark ? 'text-indigo-400' : 'text-slate-400'}`} />
                                 <h3 className="text-xl font-bold tracking-tight mb-3">{f.title}</h3>
                                 <p className={`leading-relaxed text-sm ${f.dark ? 'text-slate-400' : 'text-slate-500'}`}>{f.desc}</p>
-                                
+
                                 <div className="absolute top-8 right-8">
                                     <span className={`text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full border ${f.dark ? 'bg-indigo-900/50 text-indigo-300 border-indigo-800' : 'bg-white text-slate-400 border-slate-200 shadow-sm'}`}>
                                         {f.status}
@@ -338,7 +338,7 @@ export default function Home() {
             {/* SECTION 7: EMOTIONAL CTA */}
             <section className="py-40 bg-gradient-to-b from-[#FAF9F7] to-white text-center relative overflow-hidden">
                 <div className="max-w-3xl mx-auto px-6 relative z-10">
-                    <motion.h2 
+                    <motion.h2
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true, margin: "-50px" }}
@@ -348,9 +348,9 @@ export default function Home() {
                         Your story deserves to live on.
                     </motion.h2>
                     <p className="text-xl text-slate-500 font-serif italic mb-16">Start building your legacy today.</p>
-                    
-                    <Link 
-                        href="/signup" 
+
+                    <Link
+                        href="/login"
                         className="inline-flex items-center justify-center gap-3 rounded-full bg-slate-900 px-12 py-5 text-[14px] font-bold text-white shadow-[0_20px_40px_rgba(0,0,0,0.1)] hover:shadow-[0_20px_60px_rgba(0,0,0,0.15)] hover:bg-slate-800 transition-all hover:scale-105 tracking-widest uppercase"
                     >
                         Create Your Vault Free
