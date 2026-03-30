@@ -164,15 +164,9 @@ npm run dev
 
 ---
 
-## 📸 Screenshots
-
-> Add your UI screenshots here (Dashboard, Vault, AI Chat, etc.)
-
----
-
 ## 🎥 Demo
 
-> Add your demo video link here
+> https://youtu.be/TDE7_BxcwsM?si=SN-OY-RkNoBCF7A5
 
 ---
 
